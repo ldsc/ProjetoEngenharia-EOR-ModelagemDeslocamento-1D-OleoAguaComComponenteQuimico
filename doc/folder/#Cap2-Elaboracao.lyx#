@@ -1,0 +1,845 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois da definição dos objetivos, da especificação do software e da montagem
+ dos primeiros diagramas de caso de uso, a equipe de desenvolvimento do
+ projeto de engenharia passa por um processo de elaboração que envolve o
+ estudo de conceitos relacionados ao sistema a ser desenvolvido, a análise
+ de domínio e a identificação de pacotes.
+ 
+\end_layout
+
+\begin_layout Standard
+Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
+ iniciais de forma a desenvolver um sistema útil, que atenda às necessidades
+ do usuário e, na medida do possível, permita seu reuso e futura extensão.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Análise-de-domínio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
+ estudos na biblioteca e disciplinas do curso foi possível identificar nosso
+ domínio de trabalho:
+\end_layout
+
+\begin_layout Itemize
+Engenharia de Reservatórios: parte fundamental na qual esse projeto se sustenta.
+ O software desenvolvido, utiliza conceitos tais como de propriedades dos
+ fluídos, propriedades de rochas e a Recuperação Avançada de Petróleo.
+ Ele então aplicará todos esses conceitos na caracterização adicional do
+ reservatório e do poço o que permite a predição do comportamento de ambos
+ ao longo da produção
+\end_layout
+
+\begin_layout Itemize
+Simulação de Reservatórios é um ramo da Engenharia de Reservatórios.
+ Trata da utilização e do desenvolvimento de simuladores que buscam prever
+ o comportamento de um reservatório de petróleo e de seus poços associados
+ por meio de modelos matemáticos.
+\end_layout
+
+\begin_layout Itemize
+Modelagem Numérica Computacional que desenvolve modelos matemáticos para
+ a solução de um determinado problema físico e então parte para um o modelo
+ computacional por meio de algoritmos a fim de encontrar a solução do problema.
+\end_layout
+
+\begin_layout Itemize
+A Termodinâmica é uma área da física que estuda os efeitos de mudanças na
+ temperatura, pressão, volume e outras propriedades termodinâmicas de um
+ sistema.
+ Ela é extremamente importante no desenvolvimento de um simulador de reservatóri
+o pois os fluidos dele sofrem diversas alterações físico-químicas durante
+ sua produção, sendo necessária uma boa modelagem termodinâmica para entender
+ como eles reagirão a estas alterações
+\end_layout
+
+\begin_layout Itemize
+Álgebra linear e Cálculo Integral e Diferencial na resolução de sistemas
+ de matrizes e em cálculos de derivadas parciais, por exemplo.
+\end_layout
+
+\begin_layout Itemize
+Pacote Gráfico: usar-se-á um pacote gráfico para plotar o comportamento
+ da pressão, por exemplo, ao longo do poço e do reservatório para que haja
+ uma melhor compreeensão e vizualização.
+ 
+\end_layout
+
+\begin_layout Itemize
+Software: serão utilizadas métodos e funções já existentes para a resolução
+ de sistemas de matrizes.
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Formulação-teórica"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A formulação teórica do escoamento monofásico reativo em meios porosos envolve
+ a integração de diversos modelos matemáticos e leis constitutivas.
+ Esses modelos descrevem o fluxo de fluidos reativos, reações químicas e
+ a interação entre o fluido e o meio poroso.
+ 
+\end_layout
+
+\begin_layout Standard
+O termo "transporte reativo" refere-se à integração de reações químicas
+ com o transporte de massa, comumente observado em soluções aquosas.
+ Em sistemas nos quais a mistura é incompleta, o transporte de reagentes
+ e produtos pode desempenhar um papel crucial na determinação das taxas
+ globais de reação.
+ A modelagem do transporte reativo é frequentemente aplicada à hidrologia
+ subsuperficial, com o objetivo de prever a dispersão de contaminantes resultant
+es da extração de combustíveis fósseis, processamento químico e atividades
+ de mineração.
+ Além disso, é utilizada para otimizar a extração de combustíveis fósseis
+ por meio da injeção de ácido para abrir espaços porosos na rocha e para
+ desenvolver estratégias destinadas a remoção de dióxido de carbono (Ladd;
+ Szymczak, 2021).
+\end_layout
+
+\begin_layout Standard
+Para uma modelagem adequada do caminho do fluido e a preservação da integridade
+ das leis físicas, é necessário entender o processo de escoamento dos fluidos
+ nas estruturas geológicas.
+ Quando falamos de extração de óleo de reservatórios, o transporte do meio
+ é controlado por fenômenos de advecção, dispersão e difusão se não houver
+ nenhuma reação química.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/fluxo do fluido em meios porosos.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fluxo dos fluidos em meio porosos (Aula USP)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fluxofluido"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A equação de continuidade genérica que descreve a concentração de um componente
+ com o tempo para o escoamento de fluidos em meios porosos, considerando
+ as forças advectivas, difusivas, dispersivas e reação química, é representada
+ por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial W_{i}}{\partial t}+\overrightarrow{\nabla}\cdot\overrightarrow{N_{i}}-R_{i}=0\text{ }\text{ }i=1,...,Nc\label{eq:FormaGeraldaEquacaodaConservacaodeEnergia}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Agora iremos definir alguns termos que serão necessários para a construção
+ da solução da Equação da Conservação de Massa.
+ 
+\end_layout
+
+\begin_layout Standard
+O termo de acúmulo 
+\begin_inset Formula $W_{i}$
+\end_inset
+
+, representa o somatório dos componentes i nas 
+\begin_inset Formula $Np$
+\end_inset
+
+ fases mais a fase estacionária, como: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\stackrel[i=1]{Nc}{\sum}W_{i}=\phi\stackrel[j=1]{Np}{\sum}\rho_{j}S_{j}+(1-\phi)\rho_{s}\equiv\rho(\omega_{i},p)\label{eq:TermodeAcumulo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\phi$
+\end_inset
+
+ representa a porosidade do meio, 
+\begin_inset Formula $ρ_{j}$
+\end_inset
+
+ a massa específica da fase j e 
+\begin_inset Formula $S_{j}$
+\end_inset
+
+ a saturação da fase j.
+ Pode-se considerar a densidade geral 
+\begin_inset Formula $ρ$
+\end_inset
+
+ como uma função da pressão local 
+\begin_inset Formula $p$
+\end_inset
+
+ e do conjunto das frações mássicas globais definida como: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{i}=\frac{W_{i}}{\stackrel[i=1]{Nc}{\sum}W_{i}}\label{eq:MassadosComponentes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $\omega_{i}$
+\end_inset
+
+ é a massa dos componentes i em todas as fases dividido pela massa total
+ presente no meio poroso.
+ 
+\end_layout
+
+\begin_layout Standard
+O fluxo 
+\begin_inset Formula $\overrightarrow{N}_{i}$
+\end_inset
+
+ representa o somatório dos fluxos de todas as fases do componente i, sendo
+ composto por um termo de convecção (determinado pela velocidade de fase
+ superficial 
+\begin_inset Formula $\overrightarrow{u}_{j}$
+\end_inset
+
+) e um termo de dispersão (caracterizado pelo tensor de dispersão 
+\begin_inset Formula $\overrightarrow{\overrightarrow{K}}_{ij}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overrightarrow{N}_{i}=\stackrel[j=1]{N_{p}}{\sum}\left(\rho_{j}\omega_{ij}\overrightarrow{u}_{j}-\phi\rho_{j}S_{j}\overrightarrow{\overrightarrow{k}}_{ij}\overrightarrow{\nabla}\cdot\omega_{ij}\right)\label{eq:FluxodeI}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O tensor de dispersão possui duas componentes, uma longitudinal e outra
+ transversal para meios homogêneos e isotrópicos conforme Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ComponenteLongitudinaldoTensor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ComponenteTransversaldoTensor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ respectivamente: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(K_{xx}\right)_{ij}=\frac{D_{ij}}{\tau}+\frac{\alpha_{lj}u_{xj}^{2}+\alpha_{tj}\left(u_{yj}^{2}+u_{zj}^{2}\right)}{\phi S_{j}\mid\overrightarrow{u_{j}\mid}}\label{eq:ComponenteLongitudinaldoTensor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(K_{xy}\right)_{ij}=\frac{\left(\alpha_{lj}-\alpha_{tj}\right)u_{xj}u_{yj}}{uS\mid\overrightarrow{u_{j}\mid}}\label{eq:ComponenteTransversaldoTensor}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde o subscrito l expressa a coordenada espacial na direção paralela, ou
+ longitudinal ao fluxo total e t é qualquer direção perpendicular ou transversal
+ a l.
+ O termo 
+\begin_inset Formula $D_{ij}$
+\end_inset
+
+ é o coeficiente de difusão do componente i na fase j (Bird et al., 1960),
+ 
+\begin_inset Formula $α_{lj}$
+\end_inset
+
+ e 
+\begin_inset Formula $α_{rj}$
+\end_inset
+
+ são as dispersividades longitudinal e transversal e 
+\begin_inset Formula $τ$
+\end_inset
+
+ é o fator de tortuosidade do meio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Relações Auxiliares
+\end_layout
+
+\begin_layout Standard
+\SpecialChar ligaturebreak
+
+\end_layout
+
+\begin_layout Standard
+A Equação abaixo é uma versão da lei de Darcy para fluxos multifásicos em
+ meio poroso (Collins, 1976) e neste formato, assume-se que o fluxo não
+ tem escorregamento entre as fases.
+ A função potencial da velocidade superficial da fase
+\begin_inset Formula $\overrightarrow{u}_{j}$
+\end_inset
+
+ é representada pela soma vetorial 
+\begin_inset Formula $\overrightarrow{∇}p_{j}+ρ_{j}\overrightarrow{g}$
+\end_inset
+
+ onde 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+ é a pressão na fase j e 
+\begin_inset Formula $\overrightarrow{g}$
+\end_inset
+
+ é o vetor gravitacional que pode ser escrito como: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\overrightarrow{g}=g\overrightarrow{\nabla}D_{z}\label{eq:MagnitudeGravitacional}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde g é vetor de magnitude gravitacional, e 
+\begin_inset Formula $D_{z}$
+\end_inset
+
+ é uma distância positiva abaixo de algum plano de referência horizontal.
+\end_layout
+
+\begin_layout Standard
+A forma tensorial da permeabilidade 
+\begin_inset Formula $\overrightarrow{\overrightarrow{k}}$
+\end_inset
+
+ implica em um meio poroso anisotrópico e permeável tendo o eixo das coordenadas
+ não alinhados em relação aos eixos principais de 
+\begin_inset Formula $\overrightarrow{\overrightarrow{k}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $λ_{rj}$
+\end_inset
+
+ é a a mobilidade relativa da fase j, definida como o quociente entre a
+ permeabilidade relativa 
+\begin_inset Formula $k_{rj}$
+\end_inset
+
+ e a viscosidade 
+\begin_inset Formula $µ_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{rj}=\frac{k_{rj}\left(S,\omega,\overrightarrow{x}\right)}{\mu_{j}\left(\omega,\overrightarrow{u_{j}}\right)}\label{eq:MobilidadeRelativa}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As permeabilidades relativas e as viscosidades 
+\begin_inset Formula $k_{rj}$
+\end_inset
+
+ e 
+\begin_inset Formula $µ_{j}$
+\end_inset
+
+ geralmente são determinadas experimentalmente para o cálculo de 
+\begin_inset Formula $λ_{rj}$
+\end_inset
+
+.
+ Em linhas gerais, pode-se escrever o termo 
+\begin_inset Formula $λ_{rj}$
+\end_inset
+
+
+\begin_inset Formula $\overrightarrow{\overrightarrow{k}}$
+\end_inset
+
+ da Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MobilidadeRelativa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{rj}\overrightarrow{\overrightarrow{k}}=\frac{\overrightarrow{\overrightarrow{k}}_{j}}{\mu_{j}}\label{eq:MobilidadeRelativaVezesPermeabilidade}
+\end{equation}
+
+\end_inset
+
+onde 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\overrightarrow{\overrightarrow{k}}_{j}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ é o tensor de permeabilidade da fase.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+Fluxo Fracionário
+\end_layout
+
+\begin_layout Standard
+Como foi definido anteriormente, na seção sobre as Equações de Fluxo, o
+ fluxo fracionário na Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:FluxoFracionario"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{j}=\frac{u_{j}}{u_{t}}\therefore u_{t}f_{j}=u_{j}\label{eq:definicaofluxofracionario}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+A partir da análise dos modelos apresentados, pode-se identicar os seguintes
+ assuntos/ pacotes: 
+\end_layout
+
+\begin_layout Itemize
+Engenharia de Reservatórios: este pacote recebe arquivos digitados pelo
+ usuário ou os lê de um arquivo de extensão .txt.
+ Nele, os dados se separam, de acordo com suas característica: rocha, fluido,
+ os parâmetros de transporte reativos, as condições de contornos e as condições
+ iniciais.
+ Quando juntos, fornecem uma caracterização do reservatório como um todo
+ e servem de base para os cálculos da simulação.
+\end_layout
+
+\begin_layout Itemize
+Simulador: relaciona os pacotes, sendo responsável pela criação e destruição
+ de objetos, assim como interagir com o usuário através de um interface
+ via texto para definir todas ações a serem tomadas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Modelagem Numérica Computacional: contém os algoritmos matemáticos necessários
+ para a solução do modelo do simulador.
+\end_layout
+
+\begin_layout Itemize
+Termodinâmica: pacote que envolve todos os conceitos físicos (efeitos de
+ mudanças na temperatura, volume e outras propriedades termodinâmicas de
+ um sistema) sendo necessário no desenvolvimento de um simulador de reservatório
+ devido ao dinamismo do comportamento dos fluidos.
+\end_layout
+
+\begin_layout Itemize
+Álgebra linear e Cálculo Integral e Diferencial: pacote com deduções matématicas
+, teoremas.
+ Base de todo o processo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Pacote Gráfico: é um pacote que utiliza o gnuplot para plotar as soluções
+ numéricas obtidas, isto é, as distribuições de pressão.
+ Em outras palavras, é o software gnuplot que implementa a saída gráfica
+ dos dados calculados.
+\end_layout
+
+\begin_layout Itemize
+Biblioteca: serão utilizadas métodos e funções já existentes para a resolução
+ de sistemas de matrizes, bibliotecas padrão de C++ tais como (STL) e biblioteca
+s como a iostream, iomanip, etc.
+ 
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes – assuntos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Diagrama de pacotes – assuntos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O diagrama de pacotes da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+ mostra as relações existentes entre os pacotes deste software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Diagrama de pacotes.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
