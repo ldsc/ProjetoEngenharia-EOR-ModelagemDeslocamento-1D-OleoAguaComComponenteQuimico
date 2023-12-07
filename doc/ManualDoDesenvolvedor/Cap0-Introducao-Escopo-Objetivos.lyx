@@ -1,0 +1,340 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes true
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author -1380949907 "andre duarte bueno"
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{Izis Rosa Pinheiro} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia desenvolve-se o software fluxo monofásico
+ reativo em meios porosos
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FLUXO MONOFÁSICO REATIVO EM MEIOS POROSOS minusculo
+\end_layout
+
+\end_inset
+
+.
+
+\change_deleted -1380949907 1701975969
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+O fluxo monofásico reativo em meios porosos refere-se ao movimento de fluidos
+ através de um meio poroso, onde reações químicas na interface sólido-fluido
+ causam dissolução da matriz porosa circundante, criando 
+\emph on
+feedback 
+\emph default
+não linear.
+ Este processo é frequentemente estudado no contexto de reações geoquímicas
+ em reservatórios de petróleo.
+ Dessa forma, a principal finalidade do programa é simular o transporte
+ reativo em meios porosos, incluindo a dissolução e precipitação de espécies
+ químicas, mudanças na permeabilidade e outros fatores que acoplam o transporte
+ geoquímico ao fluxo de fluidos e transporte de energia.
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O escoamento monofásico reativo em meios porosos abrange o desenvolvimento
+ de esquemas numéricos e modelos matemáticos para simular as complexas interaçõe
+s entre escoamento de fluidos e transporte reativo em materiais porosos.
+ Isso envolve a abordagem de vários desafios em métodos teóricos e numéricos,
+ tais como o acoplamento do transporte geoquímico ao fluxo de fluidos e
+ transporte de energia, e o desenvolvimento de esquemas de volumes finitos
+ para equações parabólicas não lineares modelando escoamento monofásico
+ com transporte reativo em meios porosos anisotrópicos.
+
+\change_inserted -1380949907 1701975837
+ 
+\change_deleted -1380949907 1701975837
+
+\end_layout
+
+\begin_layout Standard
+Portanto o problema abrange o desenvolvimento de esquemas numéricos avançados
+ e modelos matemáticos para simular as complexas interações entre escoamento
+ de fluidos e transporte reativo em materiais porosos, com foco na abordagem
+ de desafios em métodos teóricos e numéricos, e na simulação de escoamento
+ em meios porosos fraturados com dissolução mineral e precipitação.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver um projeto de engenharia de software baseado em simulação numérica
+ implícita computacional para simular o escoamento monofásico reativo em
+ meios porosos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelar física e matematicamente o problema.
+\end_layout
+
+\begin_layout Itemize
+Modelagem estática por meio de diagramas com interface amigável.
+\end_layout
+
+\begin_layout Itemize
+Calcular propriedades dos meios porosos.
+\end_layout
+
+\begin_layout Itemize
+Calcular proprieadades dos fluidos
+\change_deleted -1380949907 1701975858
+ 
+\change_unchanged
+.
+\end_layout
+
+\begin_layout Itemize
+Parâmetros de 
+\change_deleted -1380949907 1701975863
+T
+\change_inserted -1380949907 1701975863
+t
+\change_unchanged
+ransporte 
+\change_deleted -1380949907 1701975864
+R
+\change_inserted -1380949907 1701975864
+r
+\change_unchanged
+eativo.
+\end_layout
+
+\begin_layout Itemize
+Resolver 
+\change_deleted -1380949907 1701975866
+S
+\change_inserted -1380949907 1701975866
+s
+\change_unchanged
+istemas de equações.
+\end_layout
+
+\begin_layout Itemize
+Gerar gráficos externos a partir do software externo 
+\change_deleted -1380949907 1701975870
+
+\family typewriter
+G
+\change_inserted -1380949907 1701975870
+g
+\change_unchanged
+nuplot
+\family default
+.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
