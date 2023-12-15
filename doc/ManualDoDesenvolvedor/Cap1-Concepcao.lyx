@@ -103,6 +103,7 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -1380949907 "andre duarte bueno"
+\author 2088995046 "DELL"
 \end_header
 
 \begin_body
@@ -394,57 +395,20 @@ O escoamento monofásico reativo em meios porosos refere-se ao movimento
  ser descrito por meio de modelos matemáticos que levam em consideração
  o transporte do fluido, as reações químicas e as mudanças na estrutura
  porosa (Banshoya et al., 2023; Fumagalli & Scotti, 2021).
+
+\change_deleted 2088995046 1702638096
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-Deseja-se desenvolver um software que resolva as 
-\change_deleted -1380949907 1701976098
-E
-\change_inserted -1380949907 1701976098
-e
-\change_unchanged
-quações 
-\change_deleted -1380949907 1701976099
-D
-\change_inserted -1380949907 1701976099
-d
-\change_unchanged
-iferenciais 
-\change_deleted -1380949907 1701976100
-P
-\change_inserted -1380949907 1701976100
-p
-\change_unchanged
-arciais não lineares que governam este problema usando usando métodos numéricos
+Deseja-se desenvolver um software que resolva as equações diferenciais parciais
+ não lineares que governam este problema usando usando métodos numéricos
  para simular o comportamento do sistema ao longo do tempo e do espaço.
  O simulador será empregado no ambiente acadêmico como um software de código
  aberto.
- Utilizando-se a 
-\change_deleted -1380949907 1701976110
-P
-\change_inserted -1380949907 1701976110
-p
-\change_unchanged
-rogramação 
-\change_deleted -1380949907 1701976111
-O
-\change_inserted -1380949907 1701976111
-o
-\change_unchanged
-rientada a 
-\change_deleted -1380949907 1701976114
-O
-\change_inserted -1380949907 1701976114
-o
-\change_unchanged
-bjetos em C++ e o software 
-\change_deleted -1380949907 1701976119
-G
-\change_inserted -1380949907 1701976119
-g
-\change_unchanged
-nuplot.
+ Utilizando-se a programação orientada a objetos em C++ e o software gnuplot.
  A interface de interação com o usuário será por meio do teclado, mouse
  e monitor em sintonia com a interface do sistema desenvolvido.
  Essa abordagem visa garantir a acessibilidade generalizada e a utilização
@@ -466,7 +430,11 @@ Dados/Atributos:
 \end_layout
 
 \begin_layout Standard
-- Saturação de água irredutivel; 
+- Saturação de água irredutivel;
+\change_deleted 2088995046 1702638107
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -490,19 +458,7 @@ Dados/Atributos:
 \end_layout
 
 \begin_layout Standard
-- Parâmetros de 
-\change_deleted -1380949907 1701976135
-T
-\change_inserted -1380949907 1701976136
-t
-\change_unchanged
-ransporte 
-\change_deleted -1380949907 1701976137
-R
-\change_inserted -1380949907 1701976137
-r
-\change_unchanged
-eativos.
+- Parâmetros de transporte reativos.
 \change_inserted -1380949907 1701976140
 
 \begin_inset Note Note
@@ -1148,25 +1104,8 @@ Resumo/descrição:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted -1380949907 1701976219
-A pessoa 
-\change_inserted -1380949907 1701976220
-O engenheiro 
-\change_deleted -1380949907 1701976267
-que 
-\change_unchanged
-interage com o software para configurar 
-\change_inserted -1380949907 1701976285
-parâmetros, 
-\change_deleted -1380949907 1701976286
-e
-\change_unchanged
- executar simulações
-\change_deleted -1380949907 1701976288
-,
-\change_unchanged
- e analisar os resultados.
+O engenheiro interage com o software para configurar parâmetros, executar
+ simulações e analisar os resultados.
 \end_layout
 
 \end_inset
@@ -1186,43 +1125,13 @@ Etapas:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted -1380949907 1701976312
-1
-\change_inserted -1380949907 1701976377
-1
-\change_unchanged
-.
- 
-\change_deleted -1380949907 1701976877
-Entrada de 
-\change_inserted -1380949907 1701976880
-Inserir dados de 
-\change_deleted -1380949907 1701976882
-dados
-\change_inserted -1380949907 1701976884
-entrada
-\change_unchanged
-.
- 
+1.
+ Inserir dados de entrada.
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_deleted -1380949907 1701976294
-2.
- Executar o software 
-\change_inserted -1380949907 1701976319
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted -1380949907 1701976382
 2.
  Executar os calculos.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1233,17 +1142,6 @@ entrada
 \begin_layout Plain Layout
 4.
  Analisar resultados.
-\change_inserted -1380949907 1701976921
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted -1380949907 1701976929
-5.
- Salvar resultados e imagens em disco.
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1263,10 +1161,7 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-Um cenário alternativo 
-\change_deleted -1380949907 1701976408
-está na determinação das condições de contorno e iniciais; e na configuração
- dos parâmetros de transporte reativos
+Um cenário alternativo é a não utilização de reação química no problema.
 \change_inserted -1380949907 1701976434
 
 \begin_inset Note Note
@@ -1405,51 +1300,13 @@ do software
 \end_layout
 
 \begin_layout Standard
-O
-\change_deleted -1380949907 1701976977
-s
-\change_unchanged
- diagrama
-\change_deleted -1380949907 1701976979
-s
-\change_unchanged
- de caso
-\change_deleted -1380949907 1701976981
-s
-\change_unchanged
- de uso 
-\change_deleted -1380949907 1701976983
-específicos 
-\change_inserted -1380949907 1701976999
-específico 
-\change_unchanged
-descrito
-\change_deleted -1380949907 1701976986
-s
-\change_unchanged
- na Figura 
-\change_deleted -1380949907 1701977007
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\change_inserted -1380949907 1701977007
-
+O diagrama de caso de uso específico descrito na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-caso-uso-geral"
 
 \end_inset
 
-
-\change_unchanged
  e na Tabela 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1497,7 +1354,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoDeUso-EntradaDeDados.png
+	filename imagens/caso de uso especifico2.png
 	width 100text%
 
 \end_inset
@@ -1509,11 +1366,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico
-\change_inserted -1380949907 1701977087
-: inserir dados de entrada
-\change_unchanged
- 
+Diagrama de caso de uso específico: inserir dados de entrada 
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Diagrama de caso de uso específico: inserir dados de entrada"

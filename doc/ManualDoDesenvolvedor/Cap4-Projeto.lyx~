@@ -1140,6 +1140,8 @@ A tabela esta preenchida com dados de um dos exemplos de projeto; você deve
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Tabular
 <lyxtabular version="3" rows="22" columns="2">
 <features islongtable="true" longtabularalignment="center">
@@ -1151,6 +1153,7 @@ A tabela esta preenchida com dados de um dos exemplos de projeto; você deve
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Licença:
 \end_layout
@@ -1161,6 +1164,8 @@ Licença:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] livre GPL-v3 [ ] proprietária
 \end_layout
 
@@ -1173,6 +1178,7 @@ Licença:
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Engenharia de software:
 \end_layout
@@ -1183,6 +1189,8 @@ Engenharia de software:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ]
 \color blue
  
@@ -1199,6 +1207,7 @@ tradicional [X] ágil [ ] outras
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Paradigma de programação:
 \end_layout
@@ -1209,6 +1218,8 @@ Paradigma de programação:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ] estruturada [X] orientado a objeto - POO [ ] funcional
 \end_layout
 
@@ -1221,6 +1232,7 @@ Paradigma de programação:
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Modelagem UML:
 \end_layout
@@ -1231,6 +1243,8 @@ Modelagem UML:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] básica 
 \begin_inset Note Note
 status collapsed
@@ -1274,6 +1288,7 @@ Uso de recursos avançados de UML
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Algoritmos
 \color inherit
@@ -1286,6 +1301,8 @@ Algoritmos
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] alto nível 
 \begin_inset Note Note
 status collapsed
@@ -1335,6 +1352,8 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 implementação: [ ] recursivo ou [X] iterativo
 \begin_inset Note Note
 status collapsed
@@ -1411,6 +1430,8 @@ muitas vezes tenho a equação que me dá uma solução exata, quando utilizo
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 concorrências: [X] serial [X] concorrente [X] paralelo
 \end_layout
 
@@ -1431,6 +1452,8 @@ concorrências: [X] serial [X] concorrente [X] paralelo
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 paradigma: [X] dividir para conquistar
 \begin_inset Note Note
 status collapsed
@@ -1568,6 +1591,7 @@ RPN - Reverse Polish Notation
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Software:
 \end_layout
@@ -1578,6 +1602,8 @@ Software:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ] de base
 \begin_inset Note Note
 status collapsed
@@ -1730,6 +1756,8 @@ Modeladores e simuladores de cunho acadêmico.
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 instruções: [X] alto nível [ ] baixo nível
 \begin_inset Note Note
 status open
@@ -1760,6 +1788,8 @@ interrupções/assembler
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 otimização: [X] serial não otimizado
 \begin_inset Note Note
 status collapsed
@@ -1899,6 +1929,8 @@ clock
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 interface do usuário: [ ] kernel numérico [ ] linha de comando [ ] modo
  texto [X] híbrida (texto e saídas gráficas) [ ] modo gráfico (ex: Qt) [
  ] navegador
@@ -1913,6 +1945,7 @@ interface do usuário: [ ] kernel numérico [ ] linha de comando [ ] modo
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Recursos de C++:
 \end_layout
@@ -1923,13 +1956,11 @@ Recursos de C++:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] C++ básico (FCC): variáveis padrões da linguagem, estruturas de controle
  e repetição, estruturas de dados, struct, classes(objetos, atributos, métodos),
- funções; entrada e saída de dados (
-\emph on
-streams
-\emph default
-), funções de cmath
+ funções; entrada e saída de dados (streams), funções de cmath
 \end_layout
 
 \end_inset
@@ -1949,20 +1980,16 @@ streams
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] C++ intermediário: funções lambda.
  Ponteiros, referências, herança, herança múltipla, polimorfismo, sobrecarga
- de funções e de operadores, tipos genéricos (templates), 
-\emph on
-smarth pointers
-\emph default
-.
+ de funções e de operadores, tipos genéricos (templates), smarth pointers.
  Diretrizes de pré-processador, classes de armazenamento e modificadores
  de acesso.
  Estruturas de dados: enum, uniões.
  Bibliotecas: entrada e saída acesso com arquivos de disco, redirecionamento.
- Bibliotecas: 
-\emph on
-filesystem
+ Bibliotecas: filesystem
 \end_layout
 
 \end_inset
@@ -1982,20 +2009,13 @@ filesystem
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] C++ intermediário 2: A biblioteca de gabaritos de C++ (a STL), containers,
  iteradores, objetos funções e funções genéricas.
- Noções de processamento paralelo (múltiplas threads, uso de 
-\emph on
-thread, join 
-\emph default
-e 
-\emph on
-mutex
-\emph default
-).
- Bibliotecas: 
-\emph on
-random, threads
+ Noções de processamento paralelo (múltiplas threads, uso de thread, join
+ e mutex).
+ Bibliotecas: random, threads
 \end_layout
 
 \end_inset
@@ -2015,13 +2035,13 @@ random, threads
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ] C++ avançado: Conversão de tipos do usuário, especializações de templates,
  excessões.
  Cluster de computadores, processamento paralelo e concorrente, múltiplos
  processos (pipes, memória compartilhada, sinais).
- Bibliotecas: 
-\emph on
-expressões regulares, múltiplos processos
+ Bibliotecas: expressões regulares, múltiplos processos
 \end_layout
 
 \end_inset
@@ -2033,6 +2053,7 @@ expressões regulares, múltiplos processos
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Bibliotecas de C++:
 \end_layout
@@ -2043,29 +2064,10 @@ Bibliotecas de C++:
 \begin_inset Text
 
 \begin_layout Plain Layout
-[X] Entrada e saída de dados (
-\emph on
-streams
-\emph default
-) [X] cmath [X] 
-\emph on
-filesystem 
-\emph default
-[ ] 
-\emph on
-random 
-\emph default
-[X] 
-\emph on
-threads 
-\emph default
-[ ] 
-\emph on
-expressões regulares 
-\emph default
-[ ] 
-\emph on
-múltiplos processos
+
+\size small
+[X] Entrada e saída de dados (streams) [X] cmath [X] filesystem [ ] random
+ [X] threads [ ] expressões regulares [ ] múltiplos processos
 \end_layout
 
 \end_inset
@@ -2077,6 +2079,7 @@ múltiplos processos
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Bibliotecas externas:
 \end_layout
@@ -2087,6 +2090,8 @@ Bibliotecas externas:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] 
 \family typewriter
 CGnuplot 
@@ -2111,6 +2116,7 @@ Qt diálogos
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Ferramentas auxiliares:
 \end_layout
@@ -2121,6 +2127,8 @@ Ferramentas auxiliares:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Montador:
 \family typewriter
  
@@ -2145,6 +2153,7 @@ Montador:
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 IDE:
 \end_layout
@@ -2155,6 +2164,8 @@ IDE:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [X] Editor simples: kate/gedit/emacs
 \family typewriter
  
@@ -2179,6 +2190,7 @@ IDE:
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 SCV:
 \end_layout
@@ -2189,6 +2201,8 @@ SCV:
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ] cvs
 \family typewriter
  
@@ -2209,6 +2223,7 @@ SCV:
 
 \begin_layout Plain Layout
 
+\size small
 \color blue
 Disciplinas correlacionadas
 \end_layout
@@ -2219,6 +2234,8 @@ Disciplinas correlacionadas
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 [ ] estatística
 \begin_inset Note Note
 status collapsed

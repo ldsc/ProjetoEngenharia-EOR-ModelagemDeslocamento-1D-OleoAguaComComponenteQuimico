@@ -352,7 +352,7 @@ Exemplo: na análise você define que existe um método para salvar um arquivo
  específicos da linguagem.
  Já no projeto, você inclui as bibliotecas necessárias para acesso ao disco,
  cria um objeto específico para acessar o disco, podendo, portanto, acrescentar
- novas classes àquelas desenvolvidas na análise.
+ novas classes àquelas desenvolvias na análise.
  
 \end_layout
 

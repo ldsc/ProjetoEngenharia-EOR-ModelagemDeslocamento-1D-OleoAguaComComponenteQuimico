@@ -153,18 +153,27 @@ name "sec:AOO"
 \begin_layout Standard
 Apresenta-se neste capítulo a Análise Orientada a Objeto - AOO, as relações
  entre as classes, os atributos, os métodos e suas associações.
- A análise consiste em modelos estruturais dos objetos e seus relacionamentos,
+ A análise consiste em modelos estruturais dos objetos e seus relacionamentos
  e modelos dinâmicos, apresentando as modicações do objeto com o tempo.
  O resultado da análise é um conjunto de diagramas que identicam os objetos
- e seus relacionamentos.O modelo de análise enfatiza o que deve ser feito
- e não como foi realizado.
+ e seus relacionamentos.
+ O modelo de análise enfatiza o que deve ser feito e não como foi realizado.
 \end_layout
 
 \begin_layout Standard
-Nas próximas seções, serão apresentados um conjunto de cinco diagramas (de
- classes, de sequência, de comunicação, de máquina de estado e de atividades)
- com o objetivo de identificar os objetos e seus relacionamentos e assim
- visualizar o software de várias formas.
+Nas próximas seções, serão apresentados um conjunto de 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cinco
+\end_layout
+
+\end_inset
+
+ diagramas (de classes, de sequência, de comunicação, de máquina de estado
+ e de atividades) com o objetivo de identificar os objetos e seus relacionamento
+s e assim visualizar o software de várias formas.
 \end_layout
 
 \begin_layout Standard
@@ -231,7 +240,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Diagrama de classes.png
-	lyxscale 50
+	lyxscale 150
 	width 100text%
 
 \end_inset
@@ -465,45 +474,6 @@ deve mostrar uma sequência geral
 
 \end_layout
 
-\begin_layout Subsection
-
-\shape italic
-\emph on
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Subsection
-
-\shape italic
-\emph on
-Diagrama de sequência específico
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de sequência específico"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-...
-\end_layout
-
-\begin_layout Itemize
-[deve mostrar uma sequência específica; NÃO É PARA REPETIR O GERAL COM 1-2
- coisas diferentes!
-\end_layout
-
-\begin_layout Plain Layout
-é um novo diagrama; detalhando algo! ]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Diagrama de comunicação
 \begin_inset Index idx
@@ -689,7 +659,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de máquina de estado
+Diagrama de máquina de estado da classe X
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-maquina-de-estado"
@@ -751,13 +721,27 @@ status open
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+fazer diagrama de atividades para as contas complicadas;
+\end_layout
+
+\begin_layout Plain Layout
+que tem fluxograma complicado, com muitos ifs, desvios, condições
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de atividades
+Diagrama de atividades classe X::MetodoY
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-atividades"

@@ -97,11 +97,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \end_header
 
 \begin_body
@@ -310,7 +311,11 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mmodelos de fluxo, capacidades de transporte reativo, propriedades de meios
+M
+\change_deleted -1380949907 1701976043
+m
+\change_unchanged
+odelos de fluxo, capacidades de transporte reativo, propriedades de meios
  porosos, propriedades de fluidos, parâmetros de transporte reativo, condições
  iniciais e de contorno, métodos numéricos, uma interface com o usuário
 \end_layout
@@ -393,12 +398,53 @@ O escoamento monofásico reativo em meios porosos refere-se ao movimento
 \end_layout
 
 \begin_layout Standard
-Deseja-se desenvolver um software que resolva as Equações Diferenciais Parciais
- não lineares que governam este problema usando usando métodos numéricos
+Deseja-se desenvolver um software que resolva as 
+\change_deleted -1380949907 1701976098
+E
+\change_inserted -1380949907 1701976098
+e
+\change_unchanged
+quações 
+\change_deleted -1380949907 1701976099
+D
+\change_inserted -1380949907 1701976099
+d
+\change_unchanged
+iferenciais 
+\change_deleted -1380949907 1701976100
+P
+\change_inserted -1380949907 1701976100
+p
+\change_unchanged
+arciais não lineares que governam este problema usando usando métodos numéricos
  para simular o comportamento do sistema ao longo do tempo e do espaço.
  O simulador será empregado no ambiente acadêmico como um software de código
  aberto.
- Utilizando-se a Programação Orientada a Objetos em C++ e o software Gnuplot.
+ Utilizando-se a 
+\change_deleted -1380949907 1701976110
+P
+\change_inserted -1380949907 1701976110
+p
+\change_unchanged
+rogramação 
+\change_deleted -1380949907 1701976111
+O
+\change_inserted -1380949907 1701976111
+o
+\change_unchanged
+rientada a 
+\change_deleted -1380949907 1701976114
+O
+\change_inserted -1380949907 1701976114
+o
+\change_unchanged
+bjetos em C++ e o software 
+\change_deleted -1380949907 1701976119
+G
+\change_inserted -1380949907 1701976119
+g
+\change_unchanged
+nuplot.
  A interface de interação com o usuário será por meio do teclado, mouse
  e monitor em sintonia com a interface do sistema desenvolvido.
  Essa abordagem visa garantir a acessibilidade generalizada e a utilização
@@ -444,7 +490,37 @@ Dados/Atributos:
 \end_layout
 
 \begin_layout Standard
-- Parâmetros de Transporte Reativos;
+- Parâmetros de 
+\change_deleted -1380949907 1701976135
+T
+\change_inserted -1380949907 1701976136
+t
+\change_unchanged
+ransporte 
+\change_deleted -1380949907 1701976137
+R
+\change_inserted -1380949907 1701976137
+r
+\change_unchanged
+eativos.
+\change_inserted -1380949907 1701976140
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1701976150
+se tiver os parametros já informa
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -1072,8 +1148,8 @@ Resumo/descrição:
 \begin_inset Text
 
 \begin_layout Plain Layout
-A pessoa que interage com o software para configurar e executar simulações,
- e analisar os resultados.
+O engenheiro interage com o software para configurar parâmetros, executar
+ simulações e analisar os resultados.
 \end_layout
 
 \end_inset
@@ -1094,13 +1170,12 @@ Etapas:
 
 \begin_layout Plain Layout
 1.
- Entrada de dados.
- 
+ Inserir dados de entrada.
 \end_layout
 
 \begin_layout Plain Layout
 2.
- Executar o software 
+ Executar os calculos.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1130,8 +1205,27 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-Um cenário alternativo está na determinação das condições de contorno e
- iniciais; e na configuração dos parâmetros de transporte reativos.
+Um cenário alternativo é a não utilização de reação química no problema.
+\change_inserted -1380949907 1701976434
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -1380949907 1701976434
+algum exemplo relacionado a este cenário
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_deleted -1380949907 1701976408
+.
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -1195,9 +1289,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/caso de uso geral.png
-	lyxscale 50
 	width 100text%
 	height 80theight%
+	keepAspectRatio
 
 \end_inset
 
@@ -1250,13 +1344,10 @@ do software
 \end_layout
 
 \begin_layout Standard
-Os diagramas de casos de uso específicos descritos na Figura 
+O diagrama de caso de uso específico descrito na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
-plural "false"
-caps "false"
-noprefix "false"
+reference "cap:Diagrama-caso-uso-geral"
 
 \end_inset
 
@@ -1270,7 +1361,7 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
  é detalhado na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo-1"
+reference "cap:Diagrama-de-caso-de-uso-especifico:Diagrama de caso de uso específico: inserir dados de entrada"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1307,7 +1398,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/caso de uso especifico1.png
+	filename imagens/caso de uso especifico2.png
 	width 100text%
 
 \end_inset
@@ -1319,10 +1410,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico 
+Diagrama de caso de uso específico: inserir dados de entrada 
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Diagrama-de-caso-de-uso-especifico:Titulo-1"
+name "cap:Diagrama-de-caso-de-uso-especifico:Diagrama de caso de uso específico: inserir dados de entrada"
 
 \end_inset
 

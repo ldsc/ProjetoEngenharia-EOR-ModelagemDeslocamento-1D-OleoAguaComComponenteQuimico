@@ -304,10 +304,12 @@ CFluido
 \begin_layout Itemize
 Classe 
 \series bold
-CPropriedades
+CMetodoNumerico
 \series default
-: representa as condições de contorno, incluindo as condições de entrada
- e saída, parâmetros relacionados ao transporte reativo.
+: representa o método numérico para realização dos cálculos do problema,
+ possui as condições iniciais e de contorno, número de iteração e o limite
+ de erro.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -332,7 +334,7 @@ Classe
 \series bold
 CGnuplot
 \series default
-: classe que possibilita a geração de grácos usando o software externo Gnuplot.
+: classe que possibilita a geração de grácos usando o software externo gnuplot.
 \end_layout
 
 \begin_layout Section

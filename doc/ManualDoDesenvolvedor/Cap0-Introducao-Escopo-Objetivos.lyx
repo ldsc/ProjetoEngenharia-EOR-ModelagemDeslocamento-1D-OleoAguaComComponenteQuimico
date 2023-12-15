@@ -101,7 +101,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1380949907 "andre duarte bueno"
 \end_header
 
 \begin_body
@@ -170,22 +169,7 @@ today}
 
 \begin_layout Standard
 No presente projeto de engenharia desenvolve-se o software fluxo monofásico
- reativo em meios porosos
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-FLUXO MONOFÁSICO REATIVO EM MEIOS POROSOS minusculo
-\end_layout
-
-\end_inset
-
-.
-
-\change_deleted -1380949907 1701975969
- 
-\change_unchanged
-
+ reativo em meios porosos fluxo monofásico reativo em meios porosos.
 \end_layout
 
 \begin_layout Standard
@@ -224,15 +208,7 @@ s entre escoamento de fluidos e transporte reativo em materiais porosos.
  transporte de energia, e o desenvolvimento de esquemas de volumes finitos
  para equações parabólicas não lineares modelando escoamento monofásico
  com transporte reativo em meios porosos anisotrópicos.
-
-\change_inserted -1380949907 1701975837
- 
-\change_deleted -1380949907 1701975837
-
-\end_layout
-
-\begin_layout Standard
-Portanto o problema abrange o desenvolvimento de esquemas numéricos avançados
+ Portanto o problema abrange o desenvolvimento de esquemas numéricos avançados
  e modelos matemáticos para simular as complexas interações entre escoamento
  de fluidos e transporte reativo em materiais porosos, com foco na abordagem
  de desafios em métodos teóricos e numéricos, e na simulação de escoamento
@@ -288,49 +264,21 @@ Calcular propriedades dos meios porosos.
 \end_layout
 
 \begin_layout Itemize
-Calcular proprieadades dos fluidos
-\change_deleted -1380949907 1701975858
- 
-\change_unchanged
-.
+Calcular proprieadades dos fluidos.
 \end_layout
 
 \begin_layout Itemize
-Parâmetros de 
-\change_deleted -1380949907 1701975863
-T
-\change_inserted -1380949907 1701975863
-t
-\change_unchanged
-ransporte 
-\change_deleted -1380949907 1701975864
-R
-\change_inserted -1380949907 1701975864
-r
-\change_unchanged
-eativo.
+Parâmetros de transporte reativo.
 \end_layout
 
 \begin_layout Itemize
-Resolver 
-\change_deleted -1380949907 1701975866
-S
-\change_inserted -1380949907 1701975866
-s
-\change_unchanged
-istemas de equações.
+Resolver sistemas de equações.
 \end_layout
 
 \begin_layout Itemize
 Gerar gráficos externos a partir do software externo 
-\change_deleted -1380949907 1701975870
-
 \family typewriter
-G
-\change_inserted -1380949907 1701975870
-g
-\change_unchanged
-nuplot
+gnuplot
 \family default
 .
 \end_layout
