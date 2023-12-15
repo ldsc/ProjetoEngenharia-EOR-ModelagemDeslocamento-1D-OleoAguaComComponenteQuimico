@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass abnt
 \begin_preamble
 \usepackage {graphicx}
@@ -21,18 +23,20 @@
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
-\inputencoding latin1
+\inputencoding iso8859-1
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -56,16 +60,26 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -80,7 +94,10 @@
 \tocdepth 1
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -97,6 +114,10 @@
 
 \emph on
 Titulo do Trabalho...Titulo do Trabalho...Titulo do Trabalho...
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -214,9 +235,12 @@ O resumo deve ser completo, simples e direto, pois é um elemento externo
 
 \begin_layout Itemize
 Um bom resumo é completo e tem a mesma ordem do documento final:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Colocação do problema, 
 \series bold
@@ -234,13 +258,15 @@ conclusões
  
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Evite colocar citações no resumo; se o fizer, incluir a referência completa.
  Veja o exemplo a seguir:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \paragraph_spacing double
 Embora obtendo resultados muito expressivos, métodos de predição da permeabilida
@@ -258,12 +284,12 @@ ente caros e não se espera que sejam usados na rotina diária da engenharia
  de petróleo.
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "metcient-LaudemiraSilvaRabelo"
+literal "true"
 
 \end_inset
 
@@ -306,6 +332,10 @@ Palavras chave:
 \emph on
 Titulo do Trabalho em ingles...Titulo do Trabalho em ingles...Titulo do Trabalho
  em ingles...
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

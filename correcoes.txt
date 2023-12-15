@@ -1,0 +1,17 @@
+
+
+1) Corrigir os diagramas e modelos uml.
+
+Mesmos nomes nas abas e no lyx.
+Quando exporta usa resolução 300 dpi, ficando com qualidade e já aparece automaticamente a atualização no lyx.
+
+No diretorio imagens apaga tudo;
+Corrige os diagramas (nomes DiagramaDeClasses.png) e a parte do diagrama.
+Exporta direto no doc/ManualDoDesenvolvedor
+Linka no lyx.
+Atualiza automaticamente.
+
+Tem de testar os diagramas.
+
+
+2) Correções no lyx.
